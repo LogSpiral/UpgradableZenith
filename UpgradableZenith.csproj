@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Import tModLoader mod properties -->
+	<Import Project="..\tModLoader.targets" />
+
+	<!-- General -->
+	<PropertyGroup>
+		<AssemblyName>UpgradableZenith</AssemblyName>
+		<Solaestas-UseAssetPath>false</Solaestas-UseAssetPath>
+		<Solaestas-UsePublicizer>True</Solaestas-UsePublicizer>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+	
+	<ItemGroup>
+	  <PackageReference Include="Solaestas.tModLoader.ModBuilder" Version="1.6.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Update="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.1" />
+	</ItemGroup>
+	<!-- References -->
+
+</Project>

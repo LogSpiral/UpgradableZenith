@@ -1,0 +1,230 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	CopperZenith: {
+		DisplayName: Copper Zenith
+		Tooltip:
+			'''
+			Zenith Youth Edition, the first Zenith for young people!!
+			Allowing you to use the Zenith at the beginning, but what's the cost??
+			"You shouldn't love this *Cu*te Zenith!!"
+			'''
+	}
+
+	EnchantedStarZenith: {
+		DisplayName: Enchanted Star Zenith
+		Tooltip: ""
+	}
+
+	ExcaliburZenith: {
+		DisplayName: Excalibur Zenith
+		Tooltip: ""
+	}
+
+	InfluxZenith: {
+		DisplayName: Influx Zenith
+		Tooltip: ""
+	}
+
+	PermanentNightZenith: {
+		DisplayName: Permanent Night Zenith
+		Tooltip: ""
+	}
+
+	TerraZentih: {
+		DisplayName: Terra Zentih
+		Tooltip: ""
+	}
+
+	MyPickaxe: {
+		DisplayName: My Pickaxe
+		Tooltip: ""
+	}
+
+	SimpleSword: {
+		DisplayName: Simple Sword
+		Tooltip: ""
+	}
+
+	BeeKeeperZenith: {
+		DisplayName: Bee Keeper Zenith
+		Tooltip: ""
+	}
+
+	BladeOfGrassZenith: {
+		DisplayName: Blade Of Grass Zenith
+		Tooltip: ""
+	}
+
+	BloodButchererZenith: {
+		DisplayName: Blood Butcherer Zenith
+		Tooltip: ""
+	}
+
+	EnchantedZenith: {
+		DisplayName: Enchanted Zenith
+		Tooltip: ""
+	}
+
+	FieryGreatZenith: {
+		DisplayName: Fiery Great Zenith
+		Tooltip: ""
+	}
+
+	Henitz: {
+		DisplayName: Henitz
+		Tooltip: ""
+	}
+
+	InfluexWaverZenith: {
+		DisplayName: Influex Waver Zenith
+		Tooltip: ""
+	}
+
+	LightsBaneZenith: {
+		DisplayName: Lights Bane Zenith
+		Tooltip: ""
+	}
+
+	MeowmereZenith: {
+		DisplayName: Meowmere Zenith
+		Tooltip: ""
+	}
+
+	MuramasaZenith: {
+		DisplayName: Muramasa Zenith
+		Tooltip: ""
+	}
+
+	SeedlerZenith: {
+		DisplayName: Seedler Zenith
+		Tooltip: ""
+	}
+
+	StarfuryZenith: {
+		DisplayName: Starfury Zenith
+		Tooltip: ""
+	}
+
+	StarwrathZenith: {
+		DisplayName: Starwrath Zenith
+		Tooltip: ""
+	}
+
+	TerragrimZenith: {
+		DisplayName: Terragrim Zenith
+		Tooltip: ""
+	}
+
+	TheHorseManZenith: {
+		DisplayName: The Horse Man Zenith
+		Tooltip: ""
+	}
+
+	TrueExcaliburZenith: {
+		DisplayName: True Excalibur Zenith
+		Tooltip: ""
+	}
+
+	TrueNightsEdgeZenith: {
+		DisplayName: True Nights Edge Zenith
+		Tooltip: ""
+	}
+
+	PurifyZenith: {
+		DisplayName: Purify Zenith
+		Tooltip: ""
+	}
+
+	BreakerZenith: {
+		DisplayName: Breaker Zentih
+		Tooltip: ""
+	}
+
+	AdamantiteZenith: {
+		DisplayName: Adamantite Zenith
+		Tooltip: ""
+	}
+
+	CobaltZenith: {
+		DisplayName: Cobalt Zenith
+		Tooltip: ""
+	}
+
+	MythrilZenith: {
+		DisplayName: Mythril Zenith
+		Tooltip: ""
+	}
+
+	OrichalcumZenith: {
+		DisplayName: Orichalcum Zenith
+		Tooltip: ""
+	}
+
+	PalladiumZenith: {
+		DisplayName: Palladium Zenith
+		Tooltip: ""
+	}
+
+	TitaniumZenith: {
+		DisplayName: Titanium Zenith
+		Tooltip: ""
+	}
+
+	HardCoreZenith: {
+		DisplayName: Hard Core Zenith
+		Tooltip: ""
+	}
+
+	SoulOfZenith: {
+		DisplayName: Soul Of Zenith
+		Tooltip: ""
+	}
+}
+
+Configs: {
+	UpgradeableZenithConfig: {
+		DisplayName: Upgradeable Zenith Config
+
+		UseSpecificHitEffect: {
+			Label: Use Specific Hit Effect
+			Tooltip: ""
+		}
+
+		UseVanillaZenithModify: {
+			Label: Use Vanilla Zenith Modify
+			Tooltip: ""
+		}
+
+		ZenithInfo: {
+			Label: Zenith Info
+			Tooltip: ""
+		}
+
+		zenithInfo: {
+			Label: zenith Info
+			Tooltip: ""
+		}
+	}
+
+	ZenithProfile: {
+		Tooltip: ""
+
+		color: {
+			Label: color
+			Tooltip: ""
+		}
+
+		length: {
+			Label: length
+			Tooltip: ""
+		}
+	}
+}
+
+Projectiles: {
+	UncenteredSwoosh.DisplayName: Uncentered Swoosh
+	AdamantiteMissile.DisplayName: Adamantite Missile
+	MythrilLaser.DisplayName: Mythril Laser
+	TitaniumSwordProj.DisplayName: Titanium Sword Proj
+}
