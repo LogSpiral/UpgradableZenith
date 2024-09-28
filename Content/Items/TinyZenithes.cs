@@ -165,6 +165,7 @@ namespace UpgradableZenith.Content.Items
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
+            SetDefaults();
             var info = Info;
             if (info.projectileItemTypes == null || info.projectileItemTypes.Length == 0)
             {
@@ -470,7 +471,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class PermanentNightZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.NightsEdge, Improve ? 35 : 20, 4, 4.5f, Item.sellPrice(0, 4), ItemRarityID.Orange, 120, [ItemID.LightsBane, ItemID.BloodButcherer, ItemID.Muramasa, ItemID.FieryGreatsword, ItemID.BladeofGrass, ItemID.BeeKeeper, ItemID.NightsEdge, ItemID.NightsEdge, ItemID.NightsEdge, ItemID.NightsEdge, ItemID.NightsEdge]);//
+        public override ZenithInfo Info => new(ItemID.NightsEdge, Improve ? 35 : 20, 4, 4.5f, Item.sellPrice(0, 4), ItemRarityID.Orange, 120, [ItemID.LightsBane, ItemID.BloodButcherer, ItemID.Muramasa, ItemID.FieryGreatsword, ItemID.BladeofGrass, ItemID.BeeKeeper, ItemID.NightsEdge, ItemID.NightsEdge, ItemID.NightsEdge]);//
         public override void AddRecipes()
         {
 
@@ -558,7 +559,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class TrueExcaliburZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.TrueExcalibur, Improve ? 70 : 45, 4, 4.5f, Item.sellPrice(0, 10), ItemRarityID.Yellow, 75, [ItemID.Excalibur, ItemID.TrueExcalibur]);
+        public override ZenithInfo Info => new(ItemID.TrueExcalibur, Improve ? 70 : 45, 4, 4.5f, Item.sellPrice(0, 10), ItemRarityID.Yellow, 75, [ItemID.Excalibur, ItemID.TrueExcalibur, ItemID.TrueExcalibur]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -581,7 +582,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class TrueNightsEdgeZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.TrueNightsEdge, Improve ? 75 : 55, 4, 4.75f, Item.sellPrice(0, 10), ItemRarityID.Yellow, 120, [ItemID.LightsBane, ItemID.BloodButcherer, ItemID.Muramasa, ItemID.FieryGreatsword, ItemID.BladeofGrass, ItemID.BeeKeeper, ItemID.NightsEdge, ItemID.TrueNightsEdge]);
+        public override ZenithInfo Info => new(ItemID.TrueNightsEdge, Improve ? 75 : 55, 4, 4.75f, Item.sellPrice(0, 10), ItemRarityID.Yellow, 120, [ItemID.LightsBane, ItemID.BloodButcherer, ItemID.Muramasa, ItemID.FieryGreatsword, ItemID.BladeofGrass, ItemID.BeeKeeper, ItemID.NightsEdge, ItemID.NightsEdge, ItemID.NightsEdge, ItemID.TrueNightsEdge, ItemID.TrueNightsEdge, ItemID.TrueNightsEdge, ItemID.TrueNightsEdge, ItemID.TrueNightsEdge, ItemID.TrueNightsEdge]);
         public override void AddRecipes()
         {
 
@@ -638,8 +639,23 @@ namespace UpgradableZenith.Content.Items
     public class TerraZentih : TinyZenith
     {
         public override ZenithInfo Info => new(ItemID.TerraBlade, Improve ? 120 : 70, 4, 6.5f, Item.sellPrice(0, 40), ItemRarityID.Yellow, 60,
-            [ItemID.LightsBane, ItemID.BloodButcherer, ItemID.Muramasa, ItemID.FieryGreatsword, ItemID.BladeofGrass, ItemID.BeeKeeper, ItemID.NightsEdge,
-            ItemID.Excalibur,ItemID.TrueNightsEdge,ItemID.TrueNightsEdge,ItemID.Seedler,ItemID.TheHorsemansBlade,ItemID.TerraBlade]
+            [ItemID.LightsBane, ItemID.BloodButcherer, ItemID.Muramasa, ItemID.FieryGreatsword, ItemID.BladeofGrass, ItemID.BeeKeeper,
+            ItemID.NightsEdge, ItemID.NightsEdge, ItemID.NightsEdge,
+            ItemID.Excalibur,ItemID.Excalibur,ItemID.Excalibur,
+            ItemID.TrueNightsEdge,ItemID.TrueNightsEdge,ItemID.TrueNightsEdge,
+            ItemID.TrueNightsEdge,ItemID.TrueNightsEdge,ItemID.TrueNightsEdge,
+            ItemID.TrueExcalibur,ItemID.TrueExcalibur,ItemID.TrueExcalibur,
+            ItemID.TrueExcalibur,ItemID.TrueExcalibur,ItemID.TrueExcalibur,
+            ItemID.Seedler,ItemID.Seedler,ItemID.Seedler,
+            ItemID.Seedler,ItemID.Seedler,ItemID.Seedler,
+            ItemID.Seedler,ItemID.Seedler,ItemID.Seedler,
+            ItemID.TheHorsemansBlade,ItemID.TheHorsemansBlade,ItemID.TheHorsemansBlade,
+            ItemID.TheHorsemansBlade,ItemID.TheHorsemansBlade,ItemID.TheHorsemansBlade,
+            ItemID.TheHorsemansBlade,ItemID.TheHorsemansBlade,ItemID.TheHorsemansBlade,
+            ItemID.TerraBlade,ItemID.TerraBlade,ItemID.TerraBlade,
+            ItemID.TerraBlade,ItemID.TerraBlade,ItemID.TerraBlade,
+            ItemID.TerraBlade,ItemID.TerraBlade,ItemID.TerraBlade,
+            ItemID.TerraBlade,ItemID.TerraBlade,ItemID.TerraBlade]
         );
         public override void AddRecipes()
         {
