@@ -205,6 +205,21 @@ Configs: {
 			Label: zenith Info
 			Tooltip: ""
 		}
+
+		RecipeEZInFTW: {
+			Label: Recipe EZ In FTW
+			Tooltip: ""
+		}
+
+		DamageImproveInFTW: {
+			Label: Damage Improve In FTW
+			Tooltip: ""
+		}
+
+		ExtraRecipeInFTW: {
+			Label: Extra Recipe In FTW:
+			Tooltip: ""
+		}
 	}
 
 	ZenithProfile: {

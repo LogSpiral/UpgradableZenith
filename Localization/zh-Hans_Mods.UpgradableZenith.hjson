@@ -336,6 +336,21 @@ Configs: {
 			// Label: zenith Info
 			// Tooltip: ""
 		}
+
+		RecipeEZInFTW: {
+			Label: 在FTW世界中简化合成配方
+			Tooltip: 向愿意不简化的肝帝致敬
+		}
+
+		DamageImproveInFTW: {
+			Label: 在FTW中提升武器面板
+			Tooltip: 向愿意用原味顶刮痧坐牢的勇士致敬
+		}
+
+		ExtraRecipeInFTW: {
+			Label: 在FTW世界中解锁额外配方以简化流程
+			Tooltip: 向愿意走原版流程的初心者致敬
+		}
 	}
 
 	ZenithProfile: {

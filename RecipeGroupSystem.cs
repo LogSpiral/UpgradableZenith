@@ -119,39 +119,42 @@ namespace UpgradableZenith
                 recipe.AddTile(TileID.MythrilAnvil);
                 recipe.Register();
             }
+            if (ModContent.GetInstance<UpgradeableZenithConfig>().ExtraRecipeInFTW) 
+            {
+                Recipe recipe1 = Recipe.Create(ItemID.GoldenKey);
+                recipe1.AddRecipeGroup(GoldBarRG, 5);
+                recipe1.AddTile(TileID.Anvils);
+                recipe1.AddCondition(Condition.ForTheWorthyWorld);
+                recipe1.Register();
 
 
-            Recipe recipe1 = Recipe.Create(ItemID.GoldenKey);
-            recipe1.AddRecipeGroup(GoldBarRG, 5);
-            recipe1.AddTile(TileID.Anvils);
-            recipe1.AddCondition(Condition.ForTheWorthyWorld);
-            recipe1.Register();
+                recipe1 = Recipe.Create(ItemID.SkyMill);
+                recipe1.AddRecipeGroup(GoldBarRG, 2);
+                recipe1.AddTile(TileID.Anvils);
+                recipe1.AddIngredient(ItemID.Cloud, 20);
+                recipe1.AddIngredient(ItemID.RainCloud, 5);
+                recipe1.AddCondition(Condition.ForTheWorthyWorld);
+                recipe1.AddIngredient(ItemID.SunplateBlock, 30);
+                recipe1.Register();
+
+                recipe1 = Recipe.Create(ItemID.HoneyDispenser);
+                recipe1.AddRecipeGroup(GoldBarRG, 2);
+                recipe1.AddIngredient(ItemID.HoneyBlock, 20);
+                recipe1.AddIngredient(ItemID.CrispyHoneyBlock, 5);
+                recipe1.AddCondition(Condition.ForTheWorthyWorld);
+                recipe1.AddIngredient(ItemID.Hive, 30);
+                recipe1.AddTile(TileID.Anvils);
+                recipe1.Register();
+
+                recipe1 = Recipe.Create(ItemID.BoneWelder);
+                recipe1.AddRecipeGroup(GoldBarRG, 2);
+                recipe1.AddIngredient(ItemID.Bone, 100);
+                recipe1.AddTile(TileID.DemonAltar);
+                recipe1.AddCondition(Condition.ForTheWorthyWorld);
+                recipe1.Register();
+            }
 
 
-            recipe1 = Recipe.Create(ItemID.SkyMill);
-            recipe1.AddRecipeGroup(GoldBarRG, 2);
-            recipe1.AddTile(TileID.Anvils);
-            recipe1.AddIngredient(ItemID.Cloud, 20);
-            recipe1.AddIngredient(ItemID.RainCloud, 5);
-            recipe1.AddCondition(Condition.ForTheWorthyWorld);
-            recipe1.AddIngredient(ItemID.SunplateBlock, 30);
-            recipe1.Register();
-
-            recipe1 = Recipe.Create(ItemID.HoneyDispenser);
-            recipe1.AddRecipeGroup(GoldBarRG, 2);
-            recipe1.AddIngredient(ItemID.HoneyBlock, 20);
-            recipe1.AddIngredient(ItemID.CrispyHoneyBlock, 5);
-            recipe1.AddCondition(Condition.ForTheWorthyWorld);
-            recipe1.AddIngredient(ItemID.Hive, 30);
-            recipe1.AddTile(TileID.Anvils);
-            recipe1.Register();
-
-            recipe1 = Recipe.Create(ItemID.BoneWelder);
-            recipe1.AddRecipeGroup(GoldBarRG, 2);
-            recipe1.AddIngredient(ItemID.Bone, 100);
-            recipe1.AddTile(TileID.DemonAltar);
-            recipe1.AddCondition(Condition.ForTheWorthyWorld);
-            recipe1.Register();
 
             base.AddRecipes();
         }

@@ -17,13 +17,13 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.UI;
 using static UpgradableZenith.Content.Items.TinyZenith;
-
+using static UpgradableZenith.UpgradeableZenithConfig;
 namespace UpgradableZenith.Content.Items
 {
     public abstract class TinyZenith : ModItem
     {
 
-
+        public static bool Improve => Main.getGoodWorld && FTWDamageImprove;
 
         public struct ZenithInfo
         {
@@ -201,7 +201,7 @@ namespace UpgradableZenith.Content.Items
 
         public void CreateTZRecipe(Dictionary<int, int> ingredients, Dictionary<string, int> RGs, KeyValuePair<int, int>? extraIngredients, int? tileID)
         {
-            bool flag = extraIngredients != null;
+            bool flag = extraIngredients != null && ModContent.GetInstance<UpgradeableZenithConfig>().RecipeEZInFTW;
 
             Recipe recipe = CreateRecipe();
             if (ingredients != null)
@@ -268,7 +268,7 @@ namespace UpgradableZenith.Content.Items
 
     public class TerragrimZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.Terragrim, 15, 4, 3, Item.sellPrice(0, 5), ItemRarityID.Green, 150, [ItemID.Terragrim]);
+        public override ZenithInfo Info => new(ItemID.Terragrim, 5, 4, 3, Item.sellPrice(0, 5), ItemRarityID.Green, 150, [ItemID.Terragrim]);
         public override void AddRecipes()
         {
             CreateRecipe().AddIngredient(ItemID.Terragrim).Register();
@@ -312,7 +312,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class StarfuryZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.Starfury, 18, 4, 5, Item.sellPrice(0, 1), 1, 165, [ItemID.Starfury]);
+        public override ZenithInfo Info => new(ItemID.Starfury, Improve ? 18 : 7, 4, 5, Item.sellPrice(0, 1), 1, 165, [ItemID.Starfury]);
         public override void AddRecipes()
         {
             //CreateRecipe().AddIngredient(ItemID.Starfury).AddIngredient(ItemID.FallenStar, 49).AddTile(TileID.SkyMill).Register();
@@ -330,7 +330,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class EnchantedZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.EnchantedSword, 14, 4, 4.25f, Item.sellPrice(0, 3), 1, 165, [ItemID.EnchantedSword]);
+        public override ZenithInfo Info => new(ItemID.EnchantedSword, Improve ? 14 : 5, 4, 4.25f, Item.sellPrice(0, 3), 1, 165, [ItemID.EnchantedSword]);
         public override void AddRecipes()
         {
             //CreateRecipe().AddIngredient(ItemID.EnchantedSword).AddIngredient(ItemID.ManaPotion, 10).AddTile(TileID.Books).Register();
@@ -348,7 +348,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class EnchantedStarZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.Starfury, 20, 4, 5, Item.sellPrice(0, 5), 2, 150, [ItemID.Starfury, ItemID.EnchantedSword, ItemID.Starfury, ItemID.EnchantedSword, ItemID.CopperShortsword], true);
+        public override ZenithInfo Info => new(ItemID.Starfury, Improve ? 20 : 10, 4, 5, Item.sellPrice(0, 5), 2, 150, [ItemID.Starfury, ItemID.EnchantedSword, ItemID.Starfury, ItemID.EnchantedSword, ItemID.CopperShortsword], true);
         public override void AddRecipes()
         {
 
@@ -374,7 +374,7 @@ namespace UpgradableZenith.Content.Items
     #region 永夜系
     public class LightsBaneZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.LightsBane, 18, 4, 5, Item.sellPrice(0, 0, 27), ItemRarityID.Blue, 135, [ItemID.LightsBane]);
+        public override ZenithInfo Info => new(ItemID.LightsBane, Improve ? 18 : 11, 4, 5, Item.sellPrice(0, 0, 27), ItemRarityID.Blue, 135, [ItemID.LightsBane]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -390,7 +390,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class BloodButchererZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.BloodButcherer, 24, 4, 5, Item.sellPrice(0, 0, 27), ItemRarityID.Blue, 165, [ItemID.BloodButcherer]);
+        public override ZenithInfo Info => new(ItemID.BloodButcherer, Improve ? 24 : 15, 4, 5, Item.sellPrice(0, 0, 27), ItemRarityID.Blue, 165, [ItemID.BloodButcherer]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -406,7 +406,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class BladeOfGrassZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.BladeofGrass, 16, 4, 4.5f, Item.sellPrice(0, 0, 54), ItemRarityID.Orange, 165, [ItemID.BladeofGrass]);
+        public override ZenithInfo Info => new(ItemID.BladeofGrass, Improve ? 16 : 9, 4, 4.5f, Item.sellPrice(0, 0, 54), ItemRarityID.Orange, 165, [ItemID.BladeofGrass]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -422,7 +422,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class MuramasaZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.Muramasa, 24, 4, 3, Item.sellPrice(0, 1, 75), ItemRarityID.Green, 135, [ItemID.Muramasa]);
+        public override ZenithInfo Info => new(ItemID.Muramasa, Improve ? 24 : 12, 4, 3, Item.sellPrice(0, 1, 75), ItemRarityID.Green, 135, [ItemID.Muramasa]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -438,7 +438,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class FieryGreatZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.FieryGreatsword, 25, 4, 6.5f, Item.sellPrice(0, 0, 54), ItemRarityID.Orange, 180, [ItemID.FieryGreatsword]);
+        public override ZenithInfo Info => new(ItemID.FieryGreatsword, Improve ? 25 : 18, 4, 6.5f, Item.sellPrice(0, 0, 54), ItemRarityID.Orange, 180, [ItemID.FieryGreatsword]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -454,7 +454,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class BeeKeeperZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.BeeKeeper, 26, 4, 5.3f, Item.sellPrice(0, 2), ItemRarityID.Orange, 135, [ItemID.BeeKeeper]);
+        public override ZenithInfo Info => new(ItemID.BeeKeeper, Improve ? 26 : 14, 4, 5.3f, Item.sellPrice(0, 2), ItemRarityID.Orange, 135, [ItemID.BeeKeeper]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -470,7 +470,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class PermanentNightZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.NightsEdge, 35, 4, 4.5f, Item.sellPrice(0, 4), ItemRarityID.Orange, 120, [ItemID.LightsBane, ItemID.BloodButcherer, ItemID.Muramasa, ItemID.FieryGreatsword, ItemID.BladeofGrass, ItemID.BeeKeeper, ItemID.NightsEdge, ItemID.NightsEdge, ItemID.NightsEdge, ItemID.NightsEdge, ItemID.NightsEdge]);//
+        public override ZenithInfo Info => new(ItemID.NightsEdge, Improve ? 35 : 20, 4, 4.5f, Item.sellPrice(0, 4), ItemRarityID.Orange, 120, [ItemID.LightsBane, ItemID.BloodButcherer, ItemID.Muramasa, ItemID.FieryGreatsword, ItemID.BladeofGrass, ItemID.BeeKeeper, ItemID.NightsEdge, ItemID.NightsEdge, ItemID.NightsEdge, ItemID.NightsEdge, ItemID.NightsEdge]);//
         public override void AddRecipes()
         {
 
@@ -532,7 +532,7 @@ namespace UpgradableZenith.Content.Items
     #region 泰拉系
     public class ExcaliburZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.Excalibur, 55, 4, 4.5f, Item.sellPrice(0, 4, 60), ItemRarityID.Pink, 90, [ItemID.Excalibur]);
+        public override ZenithInfo Info => new(ItemID.Excalibur, Improve ? 55 : 35, 4, 4.5f, Item.sellPrice(0, 4, 60), ItemRarityID.Pink, 90, [ItemID.Excalibur]);
         public override void AddRecipes()
         {
 
@@ -558,7 +558,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class TrueExcaliburZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.TrueExcalibur, 70, 4, 4.5f, Item.sellPrice(0, 10), ItemRarityID.Yellow, 75, [ItemID.Excalibur, ItemID.TrueExcalibur]);
+        public override ZenithInfo Info => new(ItemID.TrueExcalibur, Improve ? 70 : 45, 4, 4.5f, Item.sellPrice(0, 10), ItemRarityID.Yellow, 75, [ItemID.Excalibur, ItemID.TrueExcalibur]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -581,7 +581,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class TrueNightsEdgeZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.TrueNightsEdge, 75, 4, 4.75f, Item.sellPrice(0, 10), ItemRarityID.Yellow, 120, [ItemID.LightsBane, ItemID.BloodButcherer, ItemID.Muramasa, ItemID.FieryGreatsword, ItemID.BladeofGrass, ItemID.BeeKeeper, ItemID.NightsEdge, ItemID.TrueNightsEdge]);
+        public override ZenithInfo Info => new(ItemID.TrueNightsEdge, Improve ? 75 : 55, 4, 4.75f, Item.sellPrice(0, 10), ItemRarityID.Yellow, 120, [ItemID.LightsBane, ItemID.BloodButcherer, ItemID.Muramasa, ItemID.FieryGreatsword, ItemID.BladeofGrass, ItemID.BeeKeeper, ItemID.NightsEdge, ItemID.TrueNightsEdge]);
         public override void AddRecipes()
         {
 
@@ -605,7 +605,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class TheHorseManZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.TheHorsemansBlade, 100, 4, 7.5f, Item.sellPrice(0, 10), ItemRarityID.Yellow, 75, [ItemID.TheHorsemansBlade]);
+        public override ZenithInfo Info => new(ItemID.TheHorsemansBlade, Improve ? 100 : 50, 4, 7.5f, Item.sellPrice(0, 10), ItemRarityID.Yellow, 75, [ItemID.TheHorsemansBlade]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -621,7 +621,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class SeedlerZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.Seedler, 85, 4, 6, Item.sellPrice(0, 10), ItemRarityID.Yellow, 75, [ItemID.Seedler]);
+        public override ZenithInfo Info => new(ItemID.Seedler, Improve ? 85 : 60, 4, 6, Item.sellPrice(0, 10), ItemRarityID.Yellow, 75, [ItemID.Seedler]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -637,7 +637,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class TerraZentih : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.TerraBlade, 120, 4, 6.5f, Item.sellPrice(0, 40), ItemRarityID.Yellow, 60,
+        public override ZenithInfo Info => new(ItemID.TerraBlade, Improve ? 120 : 70, 4, 6.5f, Item.sellPrice(0, 40), ItemRarityID.Yellow, 60,
             [ItemID.LightsBane, ItemID.BloodButcherer, ItemID.Muramasa, ItemID.FieryGreatsword, ItemID.BladeofGrass, ItemID.BeeKeeper, ItemID.NightsEdge,
             ItemID.Excalibur,ItemID.TrueNightsEdge,ItemID.TrueNightsEdge,ItemID.Seedler,ItemID.TheHorsemansBlade,ItemID.TerraBlade]
         );
@@ -717,7 +717,7 @@ namespace UpgradableZenith.Content.Items
     #region 顶天系
     public class MeowmereZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.Meowmere, 175, 4, 6.5f, Item.sellPrice(0, 20), ItemRarityID.Cyan, 45, [ItemID.Meowmere]);
+        public override ZenithInfo Info => new(ItemID.Meowmere, Improve ? 125 : 75, 4, 6.5f, Item.sellPrice(0, 20), ItemRarityID.Cyan, 45, [ItemID.Meowmere]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -733,7 +733,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class StarwrathZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.StarWrath, 125, 4, 6.5f, Item.sellPrice(0, 20), ItemRarityID.Cyan, 60, [ItemID.StarWrath]);
+        public override ZenithInfo Info => new(ItemID.StarWrath, Improve ? 175 : 125, 4, 6.5f, Item.sellPrice(0, 20), ItemRarityID.Cyan, 60, [ItemID.StarWrath]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -749,7 +749,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class InfluexWaverZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.InfluxWaver, 100, 4, 4.5f, Item.sellPrice(0, 10), ItemRarityID.Cyan, 30, [ItemID.InfluxWaver]);
+        public override ZenithInfo Info => new(ItemID.InfluxWaver, Improve ? 100 : 40, 4, 4.5f, Item.sellPrice(0, 10), ItemRarityID.Cyan, 30, [ItemID.InfluxWaver]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -765,7 +765,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class Henitz : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.InfluxWaver, 150, 8, 7.5f, Item.sellPrice(0, 50), ItemRarityID.Cyan, 45,
+        public override ZenithInfo Info => new(ItemID.InfluxWaver, Improve ? 170 : 150, 8, 7.5f, Item.sellPrice(0, 50), ItemRarityID.Cyan, 45,
             [ItemID.InfluxWaver, ItemID.Meowmere, ItemID.StarWrath], true
         );
         public override void AddRecipes()
@@ -799,7 +799,7 @@ namespace UpgradableZenith.Content.Items
     #region 其它
     public class BreakerZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.BreakerBlade, 55, 4, 8f, Item.sellPrice(0, 3), ItemRarityID.LightRed, 180, [ItemID.BreakerBlade]);
+        public override ZenithInfo Info => new(ItemID.BreakerBlade, Improve ? 55 : 35, 4, 8f, Item.sellPrice(0, 3), ItemRarityID.LightRed, 180, [ItemID.BreakerBlade]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -898,7 +898,7 @@ namespace UpgradableZenith.Content.Items
         //        return false;
         //    }
         //}
-        public override ZenithInfo Info => new(ItemID.CobaltSword, 35, 4, 5f, Item.sellPrice(0, 1, 38), ItemRarityID.LightRed, 120, [ItemID.CobaltSword]);
+        public override ZenithInfo Info => new(ItemID.CobaltSword, Improve ? 35 : 20, 4, 5f, Item.sellPrice(0, 1, 38), ItemRarityID.LightRed, 120, [ItemID.CobaltSword]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -913,7 +913,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class PalladiumZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.PalladiumSword, 40, 4, 5.5f, Item.sellPrice(0, 1, 84), ItemRarityID.LightRed, 135, [ItemID.PalladiumSword]);
+        public override ZenithInfo Info => new(ItemID.PalladiumSword, Improve ? 40 : 22, 4, 5.5f, Item.sellPrice(0, 1, 84), ItemRarityID.LightRed, 135, [ItemID.PalladiumSword]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -928,7 +928,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class MythrilZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.MythrilSword, 40, 4, 6f, Item.sellPrice(0, 2, 7), ItemRarityID.LightRed, 120, [ItemID.MythrilSword]);
+        public override ZenithInfo Info => new(ItemID.MythrilSword, Improve ? 40 : 22, 4, 6f, Item.sellPrice(0, 2, 7), ItemRarityID.LightRed, 120, [ItemID.MythrilSword]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -988,7 +988,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class OrichalcumZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.OrichalcumSword, 50, 4, 6f, Item.sellPrice(0, 2, 53), ItemRarityID.LightRed, 135, [ItemID.OrichalcumSword]);
+        public override ZenithInfo Info => new(ItemID.OrichalcumSword, Improve ? 50 : 28, 4, 6f, Item.sellPrice(0, 2, 53), ItemRarityID.LightRed, 135, [ItemID.OrichalcumSword]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -1004,7 +1004,7 @@ namespace UpgradableZenith.Content.Items
     public class AdamantiteZenith : TinyZenith
     {
 
-        public override ZenithInfo Info => new(ItemID.AdamantiteSword, 50, 4, 6f, Item.sellPrice(0, 2, 76), ItemRarityID.LightRed, 105, [ItemID.AdamantiteSword]);
+        public override ZenithInfo Info => new(ItemID.AdamantiteSword, Improve ? 50 : 28, 4, 6f, Item.sellPrice(0, 2, 76), ItemRarityID.LightRed, 105, [ItemID.AdamantiteSword]);
         public override void AddRecipes()
         {
             CreateTZRecipe
@@ -1123,7 +1123,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class TitaniumZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.TitaniumSword, 52, 4, 6f, Item.sellPrice(0, 3, 22), ItemRarityID.LightRed, 105, [ItemID.TitaniumSword]);
+        public override ZenithInfo Info => new(ItemID.TitaniumSword, Improve ? 52 : 30, 4, 6f, Item.sellPrice(0, 3, 22), ItemRarityID.LightRed, 105, [ItemID.TitaniumSword]);
 
         public override void AddRecipes()
         {
@@ -1249,7 +1249,7 @@ namespace UpgradableZenith.Content.Items
     }
     public class HardCoreZenith : TinyZenith
     {
-        public override ZenithInfo Info => new(ItemID.TitaniumSword, 57, 4, 6f, Item.sellPrice(0, 10), ItemRarityID.Pink, 96, [ItemID.BreakerBlade, ItemID.CobaltSword, ItemID.PalladiumSword, ItemID.MythrilSword, ItemID.OrichalcumSword, ItemID.AdamantiteSword, ItemID.TitaniumSword], true);
+        public override ZenithInfo Info => new(ItemID.TitaniumSword, Improve ? 57 : 30, 4, 6f, Item.sellPrice(0, 10), ItemRarityID.Pink, 96, [ItemID.BreakerBlade, ItemID.CobaltSword, ItemID.PalladiumSword, ItemID.MythrilSword, ItemID.OrichalcumSword, ItemID.AdamantiteSword, ItemID.TitaniumSword], true);
 
         public override void AddRecipes()
         {

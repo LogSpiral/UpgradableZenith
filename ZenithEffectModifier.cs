@@ -86,6 +86,8 @@ namespace UpgradableZenith
                                 ai0 = Main.rand.NextFloat(-0.25f, 0.25f);
                                 //ai1 = 60;
                             }
+                            if (type == ItemID.Zenith)
+                                ai0 = Main.rand.NextFloat(Main.rand.NextFloat(0, 256),256);
                             Vector2 unit = Main.rand.NextVector2Unit();
                             Item item = new Item(type);
                             // + Main.rand.NextFloat(16, 64) * Main.rand.NextVector2Unit()
@@ -319,7 +321,10 @@ namespace UpgradableZenith
                             }
                             break;
                         }
-
+                    case ItemID.CopperShortsword: 
+                        {
+                            break;
+                        }
                     default: 
                         {
                             Vector2 unit = Main.rand.NextVector2Unit();

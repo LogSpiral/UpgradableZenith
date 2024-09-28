@@ -83,12 +83,29 @@ namespace UpgradableZenith
     }
     public class UpgradeableZenithConfig : ModConfig
     {
+        public static bool FTWDamageImprove;
+        public override void OnChanged()
+        {
+            FTWDamageImprove = DamageImproveInFTW;
+            base.OnChanged();
+        }
         public override ConfigScope Mode => ConfigScope.ServerSide;
         [DefaultValue(true)]
         public bool UseSpecificHitEffect = true;
 
         [DefaultValue(false)]
         public bool UseVanillaZenithModify = false;
+
+        [DefaultValue(true)]
+        public bool DamageImproveInFTW = true;
+
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool ExtraRecipeInFTW = true;
+
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool RecipeEZInFTW = true;
         //public Dictionary<ItemDefinition, ZenithProfile> zenithInfo
         //{
         //    get => (from pair in FinalFractalHelper._fractalProfiles select KeyValuePair.Create(new ItemDefinition(pair.Key), new ZenithProfile() { color = pair.Value.trailColor, length = pair.Value.trailWidth })).ToDictionary();

@@ -60,9 +60,9 @@ namespace UpgradableZenith.Content.Items
 
             }
         }
-        public static void RegisterZenith(int type) 
+        public static void RegisterZenith(int type)
         {
-            if (!FinalFractalHelper._fractalProfiles.ContainsKey(type))
+            if (type != ItemID.None && !FinalFractalHelper._fractalProfiles.ContainsKey(type))
             {
                 Main.instance.LoadItem(type);
                 var tex = TextureAssets.Item[type].Value;
@@ -104,7 +104,7 @@ namespace UpgradableZenith.Content.Items
             List<int> types = new List<int>();
             foreach (var weapon in list)
             {
-                if (weapon == null||weapon.type <= ItemID.None)
+                if (weapon == null || weapon.type <= ItemID.None)
                     continue;
                 if (id == ItemID.None && weapon.type != ItemID.None) id = weapon.type;
                 if (damage < weapon.damage) damage = weapon.damage;
