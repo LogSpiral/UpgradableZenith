@@ -70,7 +70,7 @@ namespace UpgradableZenith
             FastGroupRegister("波涌之刃", InfluexWaverRG, ItemID.InfluxWaver, ModContent.ItemType<InfluexWaverZenith>());
             FastGroupRegister("次时代欧皇刀(划掉)泰拉魔刃", TerragrimRG, ItemID.Terragrim, ModContent.ItemType<TerragrimZenith>());
             FastGroupRegister("金锭", GoldBarRG, ItemID.GoldBar, ItemID.PlatinumBar);
-            FastGroupRegister("毁灭刃", BreakerBladeRG, ItemID.TheBreaker, ModContent.ItemType<BreakerZenith>());
+            FastGroupRegister("毁灭刃", BreakerBladeRG, ItemID.BreakerBlade, ModContent.ItemType<BreakerZenith>());
             FastGroupRegister("钴剑", CobaltSwordRG, ItemID.CobaltSword, ModContent.ItemType<CobaltZenith>());
             FastGroupRegister("钯金剑", PalladiumSwordRG, ItemID.PalladiumSword, ModContent.ItemType<PalladiumZenith>());
             FastGroupRegister("秘银剑", MythrilSwordRG, ItemID.MythrilSword, ModContent.ItemType<MythrilZenith>());
