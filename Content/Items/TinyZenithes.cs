@@ -202,33 +202,28 @@ namespace UpgradableZenith.Content.Items
 
         public void CreateTZRecipe(Dictionary<int, int> ingredients, Dictionary<string, int> RGs, KeyValuePair<int, int>? extraIngredients, int? tileID)
         {
-            bool flag = extraIngredients != null && ModContent.GetInstance<UpgradeableZenithConfig>().RecipeEZInFTW;
+            bool flag = ModContent.GetInstance<UpgradeableZenithConfig>().RecipeEZInFTW;
 
             Recipe recipe = CreateRecipe();
             if (ingredients != null)
                 foreach (var pair in ingredients)
-                {
                     recipe.AddIngredient(pair.Key, pair.Value);
-                }
             if (RGs != null)
                 foreach (var pair in RGs)
-                {
                     recipe.AddRecipeGroup(pair.Key, pair.Value);
-                }
             if (tileID != null)
                 recipe.AddTile(tileID.Value);
             if (flag)
-                recipe.AddCondition(Condition.ForTheWorthyWorld);
-            recipe.Register();
-            if (flag)
             {
+                recipe.AddCondition(Condition.ForTheWorthyWorld);
+                recipe.Register();
                 recipe = recipe.Clone();
                 recipe.RemoveCondition(Condition.ForTheWorthyWorld);
                 recipe.AddCondition(Condition.NotForTheWorthy);
-                recipe.AddIngredient(extraIngredients.Value.Key, extraIngredients.Value.Value);
-                recipe.Register();
             }
-
+            if (extraIngredients.HasValue)
+                recipe.AddIngredient(extraIngredients.Value.Key, extraIngredients.Value.Value);
+            recipe.Register();
         }
 
         public void CreateTZRecipe(Dictionary<int, int> ingredients, Dictionary<string, int> RGs, Dictionary<int, int> extraIngredients, int? tileID)
