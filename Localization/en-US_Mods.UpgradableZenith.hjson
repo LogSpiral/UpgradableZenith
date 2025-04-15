@@ -1,184 +1,276 @@
 # This file will automatically update with entries for new content after a build and reload.
 
 Items: {
+
 	CopperZenith: {
 		DisplayName: Copper Zenith
 		Tooltip:
 			'''
 			Zenith Youth Edition, the first Zenith for young people!!
 			Allowing you to use the Zenith at the beginning, but what's the cost??
-			"You shouldn't love this *Cu*te Zenith!!"
+			Seems that you will need many other ingredients to make them zenith-like.
+			"Hey bro, is it really *shoot sword*?"
 			'''
 	}
 
+
+	EnchantedZenith: {
+		DisplayName: Enchanted Zenith
+		Tooltip:
+			'''
+			Although you might have the chance of 2% to get a more purified power
+			This weapon is not bad, and it will be better with some mana magic
+			"Face it, Enchanted beam splash with a radius of 20 meters!!"
+			'''
+	}
+	StarfuryZenith: {
+		DisplayName: Starfury Zenith
+		Tooltip:
+			'''
+			The zenith you can't use it to make a wish
+			Stars need more stars
+			"You need to prayer three fallen stars first"
+			'''
+	}
 	EnchantedStarZenith: {
 		DisplayName: Enchanted Star Zenith
-		Tooltip: ""
+		Tooltip:
+		'''
+		So, the cost is a mana crystal?
+		"Give me back the Enchanted sword, Now!!"
+		'''
+	}
+
+	
+	LightsBaneZenith: {
+		DisplayName: Lights Bane Zenith
+		Tooltip:
+			'''
+			The sword you must need to bully Eater of World
+			But you need to defeat it once(May be just a part of it??)
+			"Lights no longer exist"
+			'''
+	}
+	BloodButchererZenith: {
+		DisplayName: Blood Butcherer Zenith
+		Tooltip:
+			'''
+			The sword you must need to bully Brain of Cthulhu(Did I see this kind of statement before?)
+			But you need to defeat it once(May be just the servant of it??)
+			"Genocide"
+			'''
+	}
+	BladeOfGrassZenith: {
+		DisplayName: Blade Of Grass Zenith
+		Tooltip:
+			'''
+			You can get this fragment of the whole zenith before any boss, but Jungle is not easy
+			To give more living power to the Blade of Grass, you need some life crystal.
+			"Grass growing"
+			'''
+	}
+	MuramasaZenith: {
+		DisplayName: Muramasa Zenith
+		Tooltip:
+			'''
+			Sealed cursed sword gets freedom again
+			The power of the Undead gives it new power
+			"Chizuru Muramasa"
+			'''
+	}
+	BeeKeeperZenith: {
+		DisplayName: Bee Keeper Zenith
+		Tooltip:
+			'''
+			The bees damage a little...really?
+			You will summon lots of bees with plenty of bee wax
+			"Not the bees!!"
+			'''
+	}
+	FieryGreatZenith: {
+		DisplayName: Fiery Great Zenith
+		Tooltip:
+			'''
+			A very Explosive Zenith(Literally)
+			You need to feed it some lava bomb to fuel the lava(Just kidding)
+			"Art is Exploding"
+			'''
+	}
+	PermanentNightZenith: {
+		DisplayName: Permanent Night Zenith
+		Tooltip:
+			'''
+			Evil's start, Night's edge
+			But, why I need a bee keeper
+			"Long night, lonely star"
+			'''
 	}
 
 	ExcaliburZenith: {
 		DisplayName: Excalibur Zenith
-		Tooltip: ""
+		Tooltip:
+		'''
+		Golden-Wind Zenith
+		So the cost here is feed Excalibur with six souls?
+		"Ex-ca-li-bur!!"
+		'''
 	}
-
-	InfluxZenith: {
-		DisplayName: Influx Zenith
-		Tooltip: ""
-	}
-
-	PermanentNightZenith: {
-		DisplayName: Permanent Night Zenith
-		Tooltip: ""
-	}
-
-	TerraZentih: {
-		DisplayName: Terra Zentih
-		Tooltip: ""
-	}
-
-	MyPickaxe: {
-		DisplayName: My Pickaxe
-		Tooltip: ""
-	}
-
-	SimpleSword: {
-		DisplayName: Simple Sword
-		Tooltip: ""
-	}
-
-	BeeKeeperZenith: {
-		DisplayName: Bee Keeper Zenith
-		Tooltip: ""
-	}
-
-	BladeOfGrassZenith: {
-		DisplayName: Blade Of Grass Zenith
-		Tooltip: ""
-	}
-
-	BloodButchererZenith: {
-		DisplayName: Blood Butcherer Zenith
-		Tooltip: ""
-	}
-
-	EnchantedZenith: {
-		DisplayName: Enchanted Zenith
-		Tooltip: ""
-	}
-
-	FieryGreatZenith: {
-		DisplayName: Fiery Great Zenith
-		Tooltip: ""
-	}
-
-	Henitz: {
-		DisplayName: Henitz
-		Tooltip: ""
-	}
-
-	InfluexWaverZenith: {
-		DisplayName: Influex Waver Zenith
-		Tooltip: ""
-	}
-
-	LightsBaneZenith: {
-		DisplayName: Lights Bane Zenith
-		Tooltip: ""
-	}
-
-	MeowmereZenith: {
-		DisplayName: Meowmere Zenith
-		Tooltip: ""
-	}
-
-	MuramasaZenith: {
-		DisplayName: Muramasa Zenith
-		Tooltip: ""
-	}
-
-	SeedlerZenith: {
-		DisplayName: Seedler Zenith
-		Tooltip: ""
-	}
-
-	StarfuryZenith: {
-		DisplayName: Starfury Zenith
-		Tooltip: ""
-	}
-
-	StarwrathZenith: {
-		DisplayName: Starwrath Zenith
-		Tooltip: ""
-	}
-
-	TerragrimZenith: {
-		DisplayName: Terragrim Zenith
-		Tooltip: ""
-	}
-
-	TheHorseManZenith: {
-		DisplayName: The Horse Man Zenith
-		Tooltip: ""
-	}
-
 	TrueExcaliburZenith: {
 		DisplayName: True Excalibur Zenith
-		Tooltip: ""
+		Tooltip:
+			'''
+			The pure solar power
+			Remade from broken hero sword, can it shoulder this legendary?
+			"Pure Brilliance"
+			'''
 	}
 
 	TrueNightsEdgeZenith: {
 		DisplayName: True Nights Edge Zenith
-		Tooltip: ""
+		Tooltip:
+			'''
+			The pure lunar power
+			Remade from broken hero sword, can it shoulder this legendary?
+			"Muken Bell, Permanent Night"
+			'''
+	}
+	SeedlerZenith: {
+		DisplayName: Seedler Zenith
+		Tooltip:
+			'''
+			Seedler of south plants
+			You need activate it with some living poewr metal.
+			"Grass Grass Grass"
+			'''
+	}
+	TheHorseManZenith: {
+		DisplayName: The HorseMan Zenith
+		Tooltip:
+			'''
+			The last form of pumpkins
+			You just need some Spooky Woods
+			"How to deal with the pumpkins that dashing towards me"
+			'''
+	}
+	TerraZentih: {
+		DisplayName: Terra Zentih
+		Tooltip:
+			'''
+			A better flashlight
+			But WHY it need Horseman's Blade And Seedler
+			"Much better than Terra toliet"
+			'''
 	}
 
+	InfluexWaverZenith: {
+		DisplayName: Influex Waver Zenith
+		Tooltip:
+			'''
+			Specialized zenith, it might be more powferful than the completed version
+			The literally damage is much lower than the vanilla one due to its feature.
+			"There's no wave in my heart"
+			'''
+	}
+	MeowmereZenith: {
+		DisplayName: Meowmere Zenith
+		Tooltip:
+			'''
+			Condemners strongly have cats(?)
+			There's no Meowmere virus, truly.
+			"You can't stroke the cats!"
+			'''
+	}
+	StarwrathZenith: {
+		DisplayName: Starwrath Zenith
+		Tooltip:
+			'''
+			Stage6  A Thousand of wish
+			Can't conclude the universe with just stars, can you?
+			"A Star fell down, there's 49 left"
+			'''
+	}
+	Henitz: {
+		DisplayName: Henitz
+		Tooltip:
+			'''
+			The weapon consist of mystery blades from the universe.
+			It is really close to zenith, so there's no cost this time.
+			"Why don't you make Zenith directly"
+			'''
+	}
+	TerragrimZenith: {
+		DisplayName: Terragrim Zenith
+		Tooltip:
+			'''
+			Do you really willing to make it like zenith?
+			Well, it becomes stronger after being a fragment of zenith.
+			"Primitive Terra power purifies everying"
+			'''
+	}
 	PurifyZenith: {
-		DisplayName: Purify Zenith
-		Tooltip: ""
+		DisplayName: Purified Zenith
+		Tooltip:
+			'''
+			Zenith that purified by "Pure and Primitive Terra power"
+			Aleph_Infinity
+			"Infinity storm, cut down everything"
+			'''
 	}
 
 	BreakerZenith: {
-		DisplayName: Breaker Zentih
-		Tooltip: ""
+		DisplayName: Breaker Zenith
+		Tooltip:
+			'''
+			Destroying power like wall of flesh
+			Strong like Titan, Spinning like storm
+			"Trust me, it doesn't break your hair"
+			'''
 	}
-
-	AdamantiteZenith: {
-		DisplayName: Adamantite Zenith
-		Tooltip: ""
-	}
-
 	CobaltZenith: {
 		DisplayName: Cobalt Zenith
-		Tooltip: ""
+		Tooltip: '''"Deep blue cursed blade"'''
 	}
-
-	MythrilZenith: {
-		DisplayName: Mythril Zenith
-		Tooltip: ""
-	}
-
-	OrichalcumZenith: {
-		DisplayName: Orichalcum Zenith
-		Tooltip: ""
-	}
-
 	PalladiumZenith: {
 		DisplayName: Palladium Zenith
-		Tooltip: ""
+		Tooltip: '''"Heal yourself through pain"'''
 	}
-
+	MythrilZenith: {
+		DisplayName: Mythril Zenith
+		Tooltip: '''Image "All Ancestros Standing Beside Your Bed"(from th11)'''
+	}
+	OrichalcumZenith: {
+		DisplayName: Orichalcum Zenith
+		Tooltip: '''"Resurrection Butterfly -80% Reflowering-"(from th07)'''
+	}
+	AdamantiteZenith: {
+		DisplayName: Adamantite Zenith
+		Tooltip: '''"Adamantite, kid!!"'''
+	}
 	TitaniumZenith: {
 		DisplayName: Titanium Zenith
-		Tooltip: ""
+		Tooltip: '''"Titan!!"'''
 	}
 
 	HardCoreZenith: {
 		DisplayName: Hard Core Zenith
-		Tooltip: ""
+		Tooltip:
+			'''
+			Hardmode metal sword with the breakerblade.
+			Well, you ask me how to collect all the metals?
+			"Very Hard Core"
+			'''
 	}
 
 	SoulOfZenith: {
 		DisplayName: Soul Of Zenith
-		Tooltip: ""
+		Tooltip:
+			'''
+			Reward of complete the game, open the panel with right click, 
+			and you can place any weapon in it.
+			I'm not sure whether there's serious issue or not.
+			Pure toy, you need to handle the consequence your self.
+			"F_k the bedrock named Balance"
+			'''
 	}
 }
 
@@ -188,51 +280,27 @@ Configs: {
 
 		UseSpecificHitEffect: {
 			Label: Use Specific Hit Effect
-			Tooltip: ""
+			Tooltip: Overpowered or useless?
 		}
 
 		UseVanillaZenithModify: {
-			Label: Use Vanilla Zenith Modify
-			Tooltip: ""
-		}
-
-		ZenithInfo: {
-			Label: Zenith Info
-			Tooltip: ""
-		}
-
-		zenithInfo: {
-			Label: zenith Info
-			Tooltip: ""
+			Label: Add vanilla weapons into zenith's random strip?
+			Tooltip: what a mess!
 		}
 
 		RecipeEZInFTW: {
-			Label: Recipe EZ In FTW
-			Tooltip: ""
+			Label: Recipe Easier In FTW
+			Tooltip: Respect to the players that willing to use inconvenient recipes in FTW.
 		}
 
 		DamageImproveInFTW: {
 			Label: Damage Improve In FTW
-			Tooltip: ""
+			Tooltip: Respect to the players that willing to use weak weapon in FTW.
 		}
 
 		ExtraRecipeInFTW: {
-			Label: Extra Recipe In FTW:
-			Tooltip: ""
-		}
-	}
-
-	ZenithProfile: {
-		Tooltip: ""
-
-		color: {
-			Label: color
-			Tooltip: ""
-		}
-
-		length: {
-			Label: length
-			Tooltip: ""
+			Label: Assistance Recipes In FTW:
+			Tooltip: Respect to the players that willing to live without Assistance recipes in FTW
 		}
 	}
 }

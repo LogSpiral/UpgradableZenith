@@ -12,10 +12,12 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.GameContent;
+using Terraria.GameContent.Prefixes;
 using Terraria.Graphics;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.UI;
+using static System.Net.Mime.MediaTypeNames;
 using static UpgradableZenith.Content.Items.TinyZenith;
 using static UpgradableZenith.UpgradeableZenithConfig;
 namespace UpgradableZenith.Content.Items
@@ -107,8 +109,14 @@ namespace UpgradableZenith.Content.Items
             }
             return false;
         }
+        public override void SetStaticDefaults()
+        {
+            PrefixLegacy.ItemSets.SwordsHammersAxesPicks[Type] = true;
+            base.SetStaticDefaults();
+        }
         public override void SetDefaults()
         {
+
             Item.useStyle = ItemUseStyleID.Swing;
             Item.width = 56;
             Item.height = 56;
@@ -122,6 +130,7 @@ namespace UpgradableZenith.Content.Items
             Item.crit = 10;
             Item.noUseGraphic = true;
             Item.noMelee = true;
+
 
             //这下总对了((
 
@@ -165,14 +174,15 @@ namespace UpgradableZenith.Content.Items
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
-            SetDefaults();
+            int prefix = Item.prefix;
+            Item.SetDefaults(Item.type);
+            Item.Prefix(prefix);
             var info = Info;
             if (info.projectileItemTypes == null || info.projectileItemTypes.Length == 0)
             {
                 Main.NewText("发射列表不存在");
                 return false;
             }
-            FinalFractalHelper finalFractalHelper = new FinalFractalHelper();
             Vector2 vector = player.RotatedRelativePoint(player.MountedCenter, true, true);
             float num6 = Main.mouseX + Main.screenPosition.X - vector.X;
             float num7 = Main.mouseY + Main.screenPosition.Y - vector.Y;

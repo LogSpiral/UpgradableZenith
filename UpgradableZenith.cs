@@ -3,10 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Terraria;
 using Terraria.GameContent.Drawing;
+using Terraria.GameContent.Prefixes;
 using Terraria.GameContent.UI;
 using Terraria.Graphics;
 using Terraria.Graphics.Renderers;
@@ -15,6 +17,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
 using UpgradableZenith.Content.Items;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace UpgradableZenith
 {
@@ -49,10 +52,42 @@ namespace UpgradableZenith
         }
         public override void Load()
         {
-            On_FinalFractalHelper.GetRandomProfileIndex += On_FinalFractalHelper_GetRandomProfileIndex; ;
+            On_FinalFractalHelper.GetRandomProfileIndex += On_FinalFractalHelper_GetRandomProfileIndex;
+            MonoModHooks.Add(typeof(PrefixLoader).GetMethod(nameof(PrefixLoader.CanRoll), BindingFlags.Static | BindingFlags.Public), CanRollTest);
             base.Load();
         }
-
+        private static bool CanRollTest(Func<Item, int, bool> orig, Item item, int prefix)
+        {
+            if (!ItemLoader.AllowPrefix(item, prefix))
+            {
+                return false;
+            }
+            ModPrefix modPrefix = PrefixLoader.GetPrefix(prefix);
+            if (modPrefix != null)
+            {
+                if (!modPrefix.CanRoll(item))
+                {
+                    return false;
+                }
+                if (modPrefix.Category == PrefixCategory.Custom)
+                {
+                    return true;
+                }
+                return item.GetPrefixCategories().Contains(modPrefix.Category);
+            }
+            foreach (PrefixCategory prefixCategory in item.GetPrefixCategories())
+            {
+                if (Item.GetVanillaPrefixes(prefixCategory).Contains(prefix))
+                {
+                    return true;
+                }
+            }
+            if (PrefixLegacy.ItemSets.ItemsThatCanHaveLegendary2[item.type] && prefix == 84)
+            {
+                return true;
+            }
+            return false;
+        }
         private int On_FinalFractalHelper_GetRandomProfileIndex(On_FinalFractalHelper.orig_GetRandomProfileIndex orig)
         {
             List<int> list = (ModContent.GetInstance<UpgradeableZenithConfig>().UseVanillaZenithModify ? FinalFractalHelper._fractalProfiles : vanillaProfiles).Keys.ToList();

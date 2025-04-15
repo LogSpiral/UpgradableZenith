@@ -7,17 +7,99 @@ Items: {
 			'''
 			天顶剑青春版，年轻人的第一款天顶剑！！
 			允许你在一开始就使用天顶剑，但是代价是什么？？
+			看样子你需要一些额外的材料来让这些武器天顶化
 			"嘿哥们这玩意真的还是短剑吗"
 			'''
 	}
-
+	EnchantedZenith: {
+		DisplayName: 魔顶剑
+		Tooltip:
+			'''
+			尽管你也许有2%的可能得到更加纯化的力量的样子
+			这把也不赖，加点魔法就更赞了
+			"接招吧，半径20米的附魔光束水花！"
+			'''
+	}
+	StarfuryZenith: {
+		DisplayName: 星顶剑
+		Tooltip:
+			'''
+			没法用来许愿的天顶剑
+			星星当然需要更多星星啦
+			"首先祈祷三颗落星"
+			'''
+	}
 	EnchantedStarZenith: {
 		DisplayName: 附魔·星顶剑
 		Tooltip:
 			'''
-			战胜任何一个波斯前的最强天顶剑(大嘘)(现在不是了
 			所以代价就是额外一颗魔法水晶？？
 			"快把附魔剑还给我！！"
+			'''
+	}
+
+	
+	LightsBaneZenith: {
+		DisplayName: 暗顶剑
+		Tooltip:
+			'''
+			欺负黑长直必备菜刀
+			代价是你得先战胜它一次(其实只要部分体节就可以了??)
+			"光明无所遁形"
+			'''
+	}
+	BloodButchererZenith: {
+		DisplayName: 血顶剑
+		Tooltip:
+			'''
+			欺负克脑必备菜刀(好眼熟的描述)
+			代价是你得先战胜它一次(其实只要部分附属小怪就可以了??)
+			"大开杀戒"
+			'''
+	}
+	BladeOfGrassZenith: {
+		DisplayName: 草顶剑
+		Tooltip:
+			'''
+			这把也算是波斯前就能得到的天顶剑碎片，但是当然，丛林没那么好对付
+			为了给草薙注入更多生命力而耗费了点生命水晶的样子
+			"还没那么生草的一集"
+			'''
+	}
+	MuramasaZenith: {
+		DisplayName: 妖顶剑
+		Tooltip:
+			'''
+			尘封在地牢的妖刀重见了天日
+			亡灵的气息却是重新带来了活力
+			"千鹤「村正」"
+			'''
+	}
+	BeeKeeperZenith: {
+		DisplayName: 蜂顶剑
+		Tooltip:
+			'''
+			骗伤严重...吗
+			在更多蜂蜡的加持下，召唤蜜蜂的速率大幅度提升乐!!
+			"不要蜜蜂！！"
+			'''
+	}
+	FieryGreatZenith: {
+		DisplayName: 熔顶剑
+		Tooltip:
+			'''
+			十分炸裂的天顶(字面)
+			因为甩动幅度太大，得安排点熔岩炸弹随时补充一下岩浆的样子(装傻)
+			"艺术就是爆炸"
+			'''
+	}
+	PermanentNightZenith: {
+		DisplayName: 夜顶剑
+		Tooltip:
+			'''
+			万恶之源，永夜之刃
+			但是为什么还要多个养蜂人啊
+			"漫漫长夜，孤影寒星"
 			'''
 	}
 
@@ -30,197 +112,6 @@ Items: {
 			"食我咖喱棒！！"
 			'''
 	}
-
-	InfluxZenith: {
-		DisplayName: 剑顶天
-		Tooltip:
-			'''
-			来自地外宇宙的奇妙菜刀组合成的武器
-			因为是同时期的，所以没有合成代价了
-			"你都到这个时候了为什么不直接合成天顶剑"
-			'''
-	}
-
-	PermanentNightZenith: {
-		DisplayName: 夜顶剑
-		Tooltip:
-			'''
-			万恶之源，永夜之刃
-			但是为什么还要多个养蜂人啊
-			"漫漫长夜，孤影寒星"
-			'''
-	}
-
-	TerraZentih: {
-		DisplayName: 地顶剑
-		Tooltip:
-			'''
-			更赞的手电筒
-			为什么合成这个还要无头骑士剑和种子弯刀啊啊
-			"比泰拉马桶好得多"
-			'''
-	}
-
-	MyPickaxe: {
-		// DisplayName: My Pickaxe
-		// Tooltip: ""
-	}
-
-	SimpleSword: {
-		// DisplayName: Simple Sword
-		// Tooltip: ""
-	}
-
-	BeeKeeperZenith: {
-		DisplayName: 蜂顶剑
-		Tooltip:
-			'''
-			骗伤严重...吗
-			在更多蜂蜡的加持下，召唤蜜蜂的速率大幅度提升乐!!
-			"不要蜜蜂！！"
-			'''
-	}
-
-	BladeOfGrassZenith: {
-		DisplayName: 草顶剑
-		Tooltip:
-			'''
-			这把也算是波斯前就能得到的天顶剑碎片，但是当然，丛林没那么好对付
-			为了给草薙注入更多生命力而耗费了点生命水晶的样子
-			"还没那么生草的一集"
-			'''
-	}
-
-	BloodButchererZenith: {
-		DisplayName: 血顶剑
-		Tooltip:
-			'''
-			欺负克脑必备菜刀(好眼熟的描述)
-			代价是你得先战胜它一次(其实只要部分附属小怪就可以了??)
-			"大开杀戒"
-			'''
-	}
-
-	EnchantedZenith: {
-		DisplayName: 魔顶剑
-		Tooltip:
-			'''
-			尽管你也许有2%的可能得到更加纯化的力量的样子
-			这把也不赖，加点魔法就更赞了
-			"接招吧，半径20米的附魔光束水花！"
-			'''
-	}
-
-	FieryGreatZenith: {
-		DisplayName: 熔顶剑
-		Tooltip:
-			'''
-			十分炸裂的天顶(字面)
-			因为甩动幅度太大，得安排点熔岩炸弹随时补充一下岩浆的样子(装傻)
-			"艺术就是爆炸"
-			'''
-	}
-
-	Henitz: {
-		DisplayName: 剑顶天
-		Tooltip:
-			'''
-			来自地外宇宙的奇妙菜刀组合成的武器
-			因为是同时期的，所以没有合成代价了
-			"你都到这个时候了为什么不直接合成天顶剑"
-			'''
-	}
-
-	InfluexWaverZenith: {
-		DisplayName: 流·涌顶剑
-		Tooltip:
-			'''
-			专一化天顶剑，比完成体也许还要恐怖
-			鉴于比原来那把迫真太多了，面板上有卓越削弱
-			"我的内心毫无波澜"
-			'''
-	}
-
-	LightsBaneZenith: {
-		DisplayName: 暗顶剑
-		Tooltip:
-			'''
-			欺负黑长直必备菜刀
-			代价是你得先战胜它一次(其实只要部分体节就可以了??)
-			"光明无所遁形"
-			'''
-	}
-
-	MeowmereZenith: {
-		DisplayName: 虹·喵顶剑
-		Tooltip:
-			'''
-			谴责人士强烈养猫
-			你没中彩虹猫猫病毒，真的
-			"你不准撸猫！"
-			'''
-	}
-
-	MuramasaZenith: {
-		DisplayName: 妖顶剑
-		Tooltip:
-			'''
-			尘封在地牢的妖刀重见了天日
-			亡灵的气息却是重新带来了活力
-			"千鹤「村正」"
-			'''
-	}
-
-	SeedlerZenith: {
-		DisplayName: 种·草顶剑
-		Tooltip:
-			'''
-			大南方植物播种机
-			附上一些有生命力的金属进行进一步激活
-			"最生草的一集"
-			'''
-	}
-
-	StarfuryZenith: {
-		DisplayName: 星顶剑
-		Tooltip:
-			'''
-			没法用来许愿的天顶剑
-			星星当然需要更多星星啦
-			"首先祈祷三颗落星"
-			'''
-	}
-
-	StarwrathZenith: {
-		DisplayName: 狂·星顶剑
-		Tooltip:
-			'''
-			Stage6 一千个愿望
-			浩瀚的宇宙当然不能用"星星"来概况对吧
-			"一颗星星陨落了，还剩下四十九颗"
-			'''
-	}
-
-	TerragrimZenith: {
-		DisplayName: 净顶剑
-		Tooltip:
-			'''
-			你真的舍得，把它也变成天顶的样子吗
-			当然，成为天顶的碎片之后强度还是会上升不少的
-			"纯化一切的初源泰拉能量"
-			'''
-	}
-
-	TheHorseManZenith: {
-		DisplayName: 骑顶剑
-		Tooltip:
-			'''
-			南瓜神教的末路
-			只是要消耗你一些阴森木罢了
-			"南瓜骑脸怎么破"
-			'''
-	}
-
 	TrueExcaliburZenith: {
 		DisplayName: 真·圣顶剑
 		Tooltip:
@@ -240,7 +131,79 @@ Items: {
 			"无间之钟，无尽之夜"
 			'''
 	}
+	SeedlerZenith: {
+		DisplayName: 种·草顶剑
+		Tooltip:
+			'''
+			大南方植物播种机
+			附上一些有生命力的金属进行进一步激活
+			"最生草的一集"
+			'''
+	}
+	TheHorseManZenith: {
+		DisplayName: 骑顶剑
+		Tooltip:
+			'''
+			南瓜神教的末路
+			只是要消耗你一些阴森木罢了
+			"南瓜骑脸怎么破"
+			'''
+	}
+	TerraZentih: {
+		DisplayName: 地顶剑
+		Tooltip:
+			'''
+			更赞的手电筒
+			为什么合成这个还要无头骑士剑和种子弯刀啊啊
+			"比泰拉马桶好得多"
+			'''
+	}
 
+	InfluexWaverZenith: {
+		DisplayName: 流·涌顶剑
+		Tooltip:
+			'''
+			专一化天顶剑，比完成体也许还要恐怖
+			鉴于比原来那把迫真太多了，面板上有卓越削弱
+			"我的内心毫无波澜"
+			'''
+	}
+	MeowmereZenith: {
+		DisplayName: 虹·喵顶剑
+		Tooltip:
+			'''
+			谴责人士强烈养猫
+			你没中彩虹猫猫病毒，真的
+			"你不准撸猫！"
+			'''
+	}
+	StarwrathZenith: {
+		DisplayName: 狂·星顶剑
+		Tooltip:
+			'''
+			Stage6 一千个愿望
+			浩瀚的宇宙当然不能用"星星"来概括对吧
+			"一颗星星陨落了，还剩下四十九颗"
+			'''
+	}
+	Henitz: {
+		DisplayName: 剑顶天
+		Tooltip:
+			'''
+			来自地外宇宙的奇妙菜刀组合成的武器
+			因为是同时期的，所以没有合成代价了
+			"你都到这个时候了为什么不直接合成天顶剑"
+			'''
+	}
+	TerragrimZenith: {
+		DisplayName: 净顶剑
+		Tooltip:
+			'''
+			你真的舍得，把它也变成天顶的样子吗
+			当然，成为天顶的碎片之后强度还是会上升不少的
+			"纯化一切的初源泰拉能量"
+			'''
+	}
 	PurifyZenith: {
 		DisplayName: 纯化·天顶剑
 		Tooltip:
@@ -260,37 +223,30 @@ Items: {
 			"毁顶真的不是地中海的意思啊喂"
 			'''
 	}
-
-	AdamantiteZenith: {
-		DisplayName: 精·金顶剑
-		Tooltip: '''"艾德曼合金，小子!!"'''
-	}
-
 	CobaltZenith: {
 		DisplayName: 钴顶剑
 		Tooltip: '''"幽蓝妖刀"'''
 	}
-
-	MythrilZenith: {
-		DisplayName: 秘·银顶剑
-		Tooltip: '''"表象「先祖托梦」"'''
-	}
-
-	OrichalcumZenith: {
-		DisplayName: 樱·铜顶剑
-		Tooltip: '''"返魂蝶「八分咲」"'''
-	}
-
 	PalladiumZenith: {
 		DisplayName: 钯顶剑
 		Tooltip: '''"用伤痛来治愈自己"'''
 	}
-
+	MythrilZenith: {
+		DisplayName: 秘·银顶剑
+		Tooltip: '''"表象「先祖托梦」"'''
+	}
+	OrichalcumZenith: {
+		DisplayName: 樱·铜顶剑
+		Tooltip: '''"返魂蝶「八分咲」"'''
+	}
+	AdamantiteZenith: {
+		DisplayName: 精·金顶剑
+		Tooltip: '''"艾德曼合金，小子!!"'''
+	}
 	TitaniumZenith: {
 		DisplayName: 钛·金顶剑
 		Tooltip: '''"钛酷啦！！"'''
 	}
-
 	HardCoreZenith: {
 		DisplayName: 硬顶剑
 		Tooltip:
@@ -327,16 +283,6 @@ Configs: {
 			Tooltip: 乱糟糟
 		}
 
-		ZenithInfo: {
-			// Label: Zenith Info
-			// Tooltip: ""
-		}
-
-		zenithInfo: {
-			// Label: zenith Info
-			// Tooltip: ""
-		}
-
 		RecipeEZInFTW: {
 			Label: 在FTW世界中简化合成配方
 			Tooltip: 向愿意不简化的肝帝致敬
@@ -350,20 +296,6 @@ Configs: {
 		ExtraRecipeInFTW: {
 			Label: 在FTW世界中解锁额外配方以简化流程
 			Tooltip: 向愿意走原版流程的初心者致敬
-		}
-	}
-
-	ZenithProfile: {
-		// Tooltip: ""
-
-		color: {
-			// Label: color
-			// Tooltip: ""
-		}
-
-		length: {
-			// Label: length
-			// Tooltip: ""
 		}
 	}
 }
