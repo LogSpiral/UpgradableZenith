@@ -132,8 +132,12 @@ namespace UpgradableZenith.Content.Items
             Item.noMelee = true;
 
 
-            //这下总对了((
 
+            ApplyInfo();
+        }
+        void ApplyInfo() 
+        {
+            //这下总对了((
             ZenithInfo info = Info;
             Item.damage = info.damage;
             Item.crit = info.crit;
@@ -142,11 +146,10 @@ namespace UpgradableZenith.Content.Items
             Item.rare = info.rare;
             Item.useAnimation = /*info.useAnimation;*/
             Item.useTime = info.useAnimation / 3;//使用效果时间是使用动画时间的1/3,如果会发射弹幕，就会发射三次
-
+            Item.scale = 1;
             if (Item.useAnimation == 0)
                 Item.useAnimation = Item.useTime = 30;
         }
-
         public static bool GetZenithTarget(Vector2 searchCenter, float maxDistance, Player player, out int npcTargetIndex)
         {
             npcTargetIndex = 0;
@@ -175,7 +178,7 @@ namespace UpgradableZenith.Content.Items
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             int prefix = Item.prefix;
-            Item.SetDefaults(Item.type);
+            ApplyInfo();
             Item.Prefix(prefix);
             var info = Info;
             if (info.projectileItemTypes == null || info.projectileItemTypes.Length == 0)

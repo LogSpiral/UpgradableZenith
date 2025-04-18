@@ -11,6 +11,7 @@ Items: {
 			"嘿哥们这玩意真的还是短剑吗"
 			'''
 	}
+
 	EnchantedZenith: {
 		DisplayName: 魔顶剑
 		Tooltip:
@@ -20,6 +21,7 @@ Items: {
 			"接招吧，半径20米的附魔光束水花！"
 			'''
 	}
+
 	StarfuryZenith: {
 		DisplayName: 星顶剑
 		Tooltip:
@@ -29,6 +31,7 @@ Items: {
 			"首先祈祷三颗落星"
 			'''
 	}
+
 	EnchantedStarZenith: {
 		DisplayName: 附魔·星顶剑
 		Tooltip:
@@ -38,7 +41,6 @@ Items: {
 			'''
 	}
 
-	
 	LightsBaneZenith: {
 		DisplayName: 暗顶剑
 		Tooltip:
@@ -48,6 +50,7 @@ Items: {
 			"光明无所遁形"
 			'''
 	}
+
 	BloodButchererZenith: {
 		DisplayName: 血顶剑
 		Tooltip:
@@ -57,6 +60,7 @@ Items: {
 			"大开杀戒"
 			'''
 	}
+
 	BladeOfGrassZenith: {
 		DisplayName: 草顶剑
 		Tooltip:
@@ -66,6 +70,7 @@ Items: {
 			"还没那么生草的一集"
 			'''
 	}
+
 	MuramasaZenith: {
 		DisplayName: 妖顶剑
 		Tooltip:
@@ -75,6 +80,7 @@ Items: {
 			"千鹤「村正」"
 			'''
 	}
+
 	BeeKeeperZenith: {
 		DisplayName: 蜂顶剑
 		Tooltip:
@@ -84,6 +90,7 @@ Items: {
 			"不要蜜蜂！！"
 			'''
 	}
+
 	FieryGreatZenith: {
 		DisplayName: 熔顶剑
 		Tooltip:
@@ -93,6 +100,7 @@ Items: {
 			"艺术就是爆炸"
 			'''
 	}
+
 	PermanentNightZenith: {
 		DisplayName: 夜顶剑
 		Tooltip:
@@ -112,6 +120,7 @@ Items: {
 			"食我咖喱棒！！"
 			'''
 	}
+
 	TrueExcaliburZenith: {
 		DisplayName: 真·圣顶剑
 		Tooltip:
@@ -131,6 +140,7 @@ Items: {
 			"无间之钟，无尽之夜"
 			'''
 	}
+
 	SeedlerZenith: {
 		DisplayName: 种·草顶剑
 		Tooltip:
@@ -140,6 +150,7 @@ Items: {
 			"最生草的一集"
 			'''
 	}
+
 	TheHorseManZenith: {
 		DisplayName: 骑顶剑
 		Tooltip:
@@ -149,6 +160,7 @@ Items: {
 			"南瓜骑脸怎么破"
 			'''
 	}
+
 	TerraZentih: {
 		DisplayName: 地顶剑
 		Tooltip:
@@ -168,6 +180,7 @@ Items: {
 			"我的内心毫无波澜"
 			'''
 	}
+
 	MeowmereZenith: {
 		DisplayName: 虹·喵顶剑
 		Tooltip:
@@ -177,6 +190,7 @@ Items: {
 			"你不准撸猫！"
 			'''
 	}
+
 	StarwrathZenith: {
 		DisplayName: 狂·星顶剑
 		Tooltip:
@@ -186,6 +200,7 @@ Items: {
 			"一颗星星陨落了，还剩下四十九颗"
 			'''
 	}
+
 	Henitz: {
 		DisplayName: 剑顶天
 		Tooltip:
@@ -195,6 +210,7 @@ Items: {
 			"你都到这个时候了为什么不直接合成天顶剑"
 			'''
 	}
+
 	TerragrimZenith: {
 		DisplayName: 净顶剑
 		Tooltip:
@@ -204,6 +220,7 @@ Items: {
 			"纯化一切的初源泰拉能量"
 			'''
 	}
+
 	PurifyZenith: {
 		DisplayName: 纯化·天顶剑
 		Tooltip:
@@ -223,30 +240,37 @@ Items: {
 			"毁顶真的不是地中海的意思啊喂"
 			'''
 	}
+
 	CobaltZenith: {
 		DisplayName: 钴顶剑
 		Tooltip: '''"幽蓝妖刀"'''
 	}
+
 	PalladiumZenith: {
 		DisplayName: 钯顶剑
 		Tooltip: '''"用伤痛来治愈自己"'''
 	}
+
 	MythrilZenith: {
 		DisplayName: 秘·银顶剑
 		Tooltip: '''"表象「先祖托梦」"'''
 	}
+
 	OrichalcumZenith: {
 		DisplayName: 樱·铜顶剑
 		Tooltip: '''"返魂蝶「八分咲」"'''
 	}
+
 	AdamantiteZenith: {
 		DisplayName: 精·金顶剑
 		Tooltip: '''"艾德曼合金，小子!!"'''
 	}
+
 	TitaniumZenith: {
 		DisplayName: 钛·金顶剑
 		Tooltip: '''"钛酷啦！！"'''
 	}
+
 	HardCoreZenith: {
 		DisplayName: 硬顶剑
 		Tooltip:

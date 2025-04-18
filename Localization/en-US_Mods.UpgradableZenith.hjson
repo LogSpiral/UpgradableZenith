@@ -1,7 +1,6 @@
 # This file will automatically update with entries for new content after a build and reload.
 
 Items: {
-
 	CopperZenith: {
 		DisplayName: Copper Zenith
 		Tooltip:
@@ -13,7 +12,6 @@ Items: {
 			'''
 	}
 
-
 	EnchantedZenith: {
 		DisplayName: Enchanted Zenith
 		Tooltip:
@@ -23,6 +21,7 @@ Items: {
 			"Face it, Enchanted beam splash with a radius of 20 meters!!"
 			'''
 	}
+
 	StarfuryZenith: {
 		DisplayName: Starfury Zenith
 		Tooltip:
@@ -32,16 +31,16 @@ Items: {
 			"You need to prayer three fallen stars first"
 			'''
 	}
+
 	EnchantedStarZenith: {
 		DisplayName: Enchanted Star Zenith
 		Tooltip:
-		'''
-		So, the cost is a mana crystal?
-		"Give me back the Enchanted sword, Now!!"
-		'''
+			'''
+			So, the cost is a mana crystal?
+			"Give me back the Enchanted sword, Now!!"
+			'''
 	}
 
-	
 	LightsBaneZenith: {
 		DisplayName: Lights Bane Zenith
 		Tooltip:
@@ -51,6 +50,7 @@ Items: {
 			"Lights no longer exist"
 			'''
 	}
+
 	BloodButchererZenith: {
 		DisplayName: Blood Butcherer Zenith
 		Tooltip:
@@ -60,6 +60,7 @@ Items: {
 			"Genocide"
 			'''
 	}
+
 	BladeOfGrassZenith: {
 		DisplayName: Blade Of Grass Zenith
 		Tooltip:
@@ -69,6 +70,7 @@ Items: {
 			"Grass growing"
 			'''
 	}
+
 	MuramasaZenith: {
 		DisplayName: Muramasa Zenith
 		Tooltip:
@@ -78,6 +80,7 @@ Items: {
 			"Chizuru Muramasa"
 			'''
 	}
+
 	BeeKeeperZenith: {
 		DisplayName: Bee Keeper Zenith
 		Tooltip:
@@ -87,6 +90,7 @@ Items: {
 			"Not the bees!!"
 			'''
 	}
+
 	FieryGreatZenith: {
 		DisplayName: Fiery Great Zenith
 		Tooltip:
@@ -96,6 +100,7 @@ Items: {
 			"Art is Exploding"
 			'''
 	}
+
 	PermanentNightZenith: {
 		DisplayName: Permanent Night Zenith
 		Tooltip:
@@ -109,12 +114,13 @@ Items: {
 	ExcaliburZenith: {
 		DisplayName: Excalibur Zenith
 		Tooltip:
-		'''
-		Golden-Wind Zenith
-		So the cost here is feed Excalibur with six souls?
-		"Ex-ca-li-bur!!"
-		'''
+			'''
+			Golden-Wind Zenith
+			So the cost here is feed Excalibur with six souls?
+			"Ex-ca-li-bur!!"
+			'''
 	}
+
 	TrueExcaliburZenith: {
 		DisplayName: True Excalibur Zenith
 		Tooltip:
@@ -134,6 +140,7 @@ Items: {
 			"Muken Bell, Permanent Night"
 			'''
 	}
+
 	SeedlerZenith: {
 		DisplayName: Seedler Zenith
 		Tooltip:
@@ -143,6 +150,7 @@ Items: {
 			"Grass Grass Grass"
 			'''
 	}
+
 	TheHorseManZenith: {
 		DisplayName: The HorseMan Zenith
 		Tooltip:
@@ -152,6 +160,7 @@ Items: {
 			"How to deal with the pumpkins that dashing towards me"
 			'''
 	}
+
 	TerraZentih: {
 		DisplayName: Terra Zentih
 		Tooltip:
@@ -171,6 +180,7 @@ Items: {
 			"There's no wave in my heart"
 			'''
 	}
+
 	MeowmereZenith: {
 		DisplayName: Meowmere Zenith
 		Tooltip:
@@ -180,6 +190,7 @@ Items: {
 			"You can't stroke the cats!"
 			'''
 	}
+
 	StarwrathZenith: {
 		DisplayName: Starwrath Zenith
 		Tooltip:
@@ -189,6 +200,7 @@ Items: {
 			"A Star fell down, there's 49 left"
 			'''
 	}
+
 	Henitz: {
 		DisplayName: Henitz
 		Tooltip:
@@ -198,6 +210,7 @@ Items: {
 			"Why don't you make Zenith directly"
 			'''
 	}
+
 	TerragrimZenith: {
 		DisplayName: Terragrim Zenith
 		Tooltip:
@@ -207,6 +220,7 @@ Items: {
 			"Primitive Terra power purifies everying"
 			'''
 	}
+
 	PurifyZenith: {
 		DisplayName: Purified Zenith
 		Tooltip:
@@ -226,26 +240,32 @@ Items: {
 			"Trust me, it doesn't break your hair"
 			'''
 	}
+
 	CobaltZenith: {
 		DisplayName: Cobalt Zenith
 		Tooltip: '''"Deep blue cursed blade"'''
 	}
+
 	PalladiumZenith: {
 		DisplayName: Palladium Zenith
 		Tooltip: '''"Heal yourself through pain"'''
 	}
+
 	MythrilZenith: {
 		DisplayName: Mythril Zenith
-		Tooltip: '''Image "All Ancestros Standing Beside Your Bed"(from th11)'''
+		Tooltip: Image "All Ancestros Standing Beside Your Bed"(from th11)
 	}
+
 	OrichalcumZenith: {
 		DisplayName: Orichalcum Zenith
 		Tooltip: '''"Resurrection Butterfly -80% Reflowering-"(from th07)'''
 	}
+
 	AdamantiteZenith: {
 		DisplayName: Adamantite Zenith
 		Tooltip: '''"Adamantite, kid!!"'''
 	}
+
 	TitaniumZenith: {
 		DisplayName: Titanium Zenith
 		Tooltip: '''"Titan!!"'''
